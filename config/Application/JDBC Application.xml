@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Application connector="sailpoint.connector.JDBCConnector" featuresString="DISCOVER_SCHEMA, PROVISIONING, SYNC_PROVISIONING, DIRECT_PERMISSIONS, SEARCH, ENABLE, UNLOCK, ACCOUNT_ONLY_REQUEST" icon="databaseIcon" name="JDBC Application" profileClass="" type="JDBC">
+  <Attributes>
+    <Map>
+      <entry key="Group.SQL" value="SELECT * FROM jdbc.jdbc_groups_data;"/>
+      <entry key="Group.aggregationMode">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.deltaTable"/>
+      <entry key="Group.driverClass" value="com.mysql.cj.jdbc.Driver"/>
+      <entry key="Group.getDeltaSQL"/>
+      <entry key="Group.getDirectPermObjectSQL"/>
+      <entry key="Group.getObjectSQL"/>
+      <entry key="Group.isPermissionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.password" value="1:ACP:4CEq/hoSNJGIMtIg0FtwUjNS0EdEWfoq2B1aZT5p3fc="/>
+      <entry key="Group.url" value="jdbc:mysql://localhost:3306/jdbc"/>
+      <entry key="Group.useExecuteQuery">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.useStoredProcedureDelta">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.useStoredProcedureDirectPermission">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.useStoredProcedureGetObject">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.useStoredProcedureSqlStmt">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group.user" value="root"/>
+      <entry key="Group2.SQL" value="SELECT * FROM jdbc.jdbc_user_groups_data;"/>
+      <entry key="Group2.aggregationMode">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group2.driverClass" value="com.mysql.cj.jdbc.Driver"/>
+      <entry key="Group2.isPermissionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group2.mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group2.password" value="1:ACP:MhOBa3RRh8FxybKV9SO0ZEZXmeXrirSF293pCDKp09c="/>
+      <entry key="Group2.url" value="jdbc:mysql://localhost:3306/jdbc"/>
+      <entry key="Group2.useExecuteQuery">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group2.useStoredProcedureDelta">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group2.useStoredProcedureDirectPermission">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group2.useStoredProcedureGetObject">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group2.useStoredProcedureSqlStmt">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="Group2.user" value="root"/>
+      <entry key="SQL" value="select Name, FirstName, LastName,Department,EmployeeID,EmailAddress,NetworkID,managerID,groupname from jdbc.jdbc_user_data a , jdbc.jdbc_groups_data b, jdbc.jdbc_user_groups_data c where a.id=c.groupid and b.groupid = c.groupid order by Name;&#xd;&#xa;"/>
+      <entry key="acctAggregationEnd">
+        <value>
+          <Date>1707989141088</Date>
+        </value>
+      </entry>
+      <entry key="acctAggregationStart">
+        <value>
+          <Date>1707989138360</Date>
+        </value>
+      </entry>
+      <entry key="afterProvisioningRule"/>
+      <entry key="aggregationMode">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="beforeProvisioningRule" value="xml"/>
+      <entry key="compositeDefinition"/>
+      <entry key="connMaxRetry" value="3"/>
+      <entry key="connRetryEnable">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="connWaitTimeForRetry" value="2"/>
+      <entry key="deltaTable"/>
+      <entry key="driverClass" value="com.mysql.cj.jdbc.Driver"/>
+      <entry key="getDeltaSQL"/>
+      <entry key="isPermissionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="jdbcExceptionBucketing">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="jdbcProvisionRule" value="JDBC GLOB CREATEMOD"/>
+      <entry key="mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+      <entry key="nativeChangeDetectionAttributes"/>
+      <entry key="nativeChangeDetectionEnabled">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionOperations">
+        <value>
+          <List>
+            <String>Create</String>
+            <String>Modify</String>
+            <String>Delete</String>
+          </List>
+        </value>
+      </entry>
+      <entry key="noPermissions" value="false"/>
+      <entry key="operations" value="Create, Modify, Delete, Enable, Disable, Unlock"/>
+      <entry key="partitionMode">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="partitionStatements"/>
+      <entry key="password" value="1:ACP:LMYADbPB2IROu6pK766WZdCJityGwvs8cx4htY2fvh4="/>
+      <entry key="provisionRule" value="globalRule"/>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US"/>
+          </Map>
+        </value>
+      </entry>
+      <entry key="templateApplication" value="JDBC Template"/>
+      <entry key="testConnSQL"/>
+      <entry key="url" value="jdbc:mysql://localhost:3306/jdbc"/>
+      <entry key="useExecuteQuery">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedureDelta">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedureDirectPermission">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedureGetObject">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedurePartition">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedureSqlStmt">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="useStoredProcedureTestConn">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="user" value="root"/>
+    </Map>
+  </Attributes>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <ProvisioningForms>
+    <Form name="JDBCUserData" objectType="account" type="Create">
+      <Attributes>
+        <Map>
+          <entry key="pageTitle" value="JDBCUserData"/>
+        </Map>
+      </Attributes>
+      <Section name="UserDetails">
+        <Field displayName="FirstName" name="FirstName" type="string">
+          <Script>
+            <Source>return identity.getAttribute("firstname");</Source>
+          </Script>
+        </Field>
+        <Field displayName="LastName" name="LastName" type="string">
+          <Script>
+            <Source>return identity.getAttribute("lastname");</Source>
+          </Script>
+        </Field>
+        <Field displayName="Department" name="Department" type="string">
+          <Script>
+            <Source>return identity.getAttribute("Department");</Source>
+          </Script>
+        </Field>
+        <Field displayName="EmployeeID" name="EmployeeID" type="string">
+          <Script>
+            <Source>return identity.getAttribute("EmployeeID");</Source>
+          </Script>
+        </Field>
+        <Field displayName="EmailAddress" name="EmailAddress" type="string">
+          <Script>
+            <Source>return identity.getAttribute("email");</Source>
+          </Script>
+        </Field>
+        <Field displayName="NetworkID" name="NetworkID" type="string">
+          <Script>
+            <Source>return identity.getAttribute("NetworkID");</Source>
+          </Script>
+        </Field>
+        <Field displayName="managerID" name="managerID" type="string">
+          <Script>
+            <Source>return identity.getAttribute("manager");</Source>
+          </Script>
+        </Field>
+        <Field displayName="Name" name="Name" type="string">
+          <Script>
+            <Source>return identity.getAttribute("displayName");</Source>
+          </Script>
+        </Field>
+      </Section>
+      <Section name="GroupDetails">
+        <Field displayName="groupname" name="groupname" type="string">
+          <Script>
+            <Source>return identity.getAttribute("groupname");</Source>
+          </Script>
+        </Field>
+      </Section>
+    </Form>
+  </ProvisioningForms>
+  <Schemas>
+    <Schema displayAttribute="Name" identityAttribute="Name" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None">
+      <AttributeDefinition name="Name" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="FirstName" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="LastName" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition entitlement="true" managed="true" multi="true" name="Department" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="EmployeeID" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="EmailAddress" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="NetworkID" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="managerID" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition entitlement="true" managed="true" multi="true" name="groupname" schemaObjectType="Group" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="Password" type="string">
+        <Description/>
+      </AttributeDefinition>
+    </Schema>
+    <Schema aggregationType="group" descriptionAttribute="" displayAttribute="GroupName" identityAttribute="GroupName" instanceAttribute="" nativeObjectType="Group" objectType="Group" permissionsRemediationModificationType="None">
+      <AttributeDefinition name="id" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition multi="true" name="GroupName" type="string">
+        <Description/>
+      </AttributeDefinition>
+      <AttributeDefinition name="GroupCategory" type="string">
+        <Description/>
+      </AttributeDefinition>
+    </Schema>
+  </Schemas>
+  <ApplicationScorecard/>
+</Application>

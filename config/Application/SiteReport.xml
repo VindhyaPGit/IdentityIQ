@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Application authoritative="true" connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA, ACCOUNT_ONLY_REQUEST" icon="enterpriseIcon" name="SiteReport" profileClass="" type="DelimitedFile">
+  <Attributes>
+    <Map>
+      <entry key="GroupAssociationgroup.columnNames">
+        <value>
+          <List>
+            <String>Group Association</String>
+          </List>
+        </value>
+      </entry>
+      <entry key="GroupAssociationgroup.commentCharacter"/>
+      <entry key="GroupAssociationgroup.delimiter" value=","/>
+      <entry key="GroupAssociationgroup.file" value="D:\Vindhya\Site_association_report ( Nov 28 2023 10_25 AM ).csv"/>
+      <entry key="GroupAssociationgroup.fileEncoding"/>
+      <entry key="GroupAssociationgroup.filterEmptyRecords">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="GroupAssociationgroup.filterString"/>
+      <entry key="GroupAssociationgroup.hasHeader">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="GroupAssociationgroup.indexColumn"/>
+      <entry key="GroupAssociationgroup.isCaseInsensitiveMerge">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="GroupAssociationgroup.isSortedByIndexColumn">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="GroupAssociationgroup.mergeColumns"/>
+      <entry key="GroupAssociationgroup.mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="GroupAssociationgroup.numberOfLinesToSkip" value="4"/>
+      <entry key="GroupAssociationgroup.regularExpression"/>
+      <entry key="GroupAssociationgroup.stopIfLineHasWrongColumnLength">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="PassphraseForPrivateKey"/>
+      <entry key="PrivateKeyFilePath"/>
+      <entry key="afterProvisioningRule"/>
+      <entry key="beforeProvisioningRule"/>
+      <entry key="columnNames">
+        <value>
+          <List>
+            <String>Technician Name</String>
+            <String>Assigned Roles</String>
+            <String>Site Association</String>
+            <String>Group Association</String>
+          </List>
+        </value>
+      </entry>
+      <entry key="compositeDefinition"/>
+      <entry key="delimiter" value=","/>
+      <entry key="file" value="D:\Vindhya\Site_association_report ( Nov 28 2023 10_25 AM ).csv"/>
+      <entry key="filetransport" value="local"/>
+      <entry key="filterEmptyRecords">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="ftpsAuthMethod" value="password"/>
+      <entry key="ftpsClientCertificateFilePath"/>
+      <entry key="ftpsClientCertificatePassphrase"/>
+      <entry key="group.filetransport" value="local"/>
+      <entry key="group.filterEmptyRecords">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="group.partitionMode" value="auto"/>
+      <entry key="hasHeader">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="isCaseInsensitiveMerge">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="isSortedByIndexColumn">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="mergeRows">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+      <entry key="nativeChangeDetectionAttributes"/>
+      <entry key="nativeChangeDetectionEnabled">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionOperations"/>
+      <entry key="numberOfLinesToSkip" value="4"/>
+      <entry key="parseType" value="delimited"/>
+      <entry key="partitionMode" value="auto"/>
+      <entry key="port"/>
+      <entry key="sftpAuthMethod" value="password"/>
+      <entry key="stopIfLineHasWrongColumnLength">
+        <value>
+          <Boolean/>
+        </value>
+      </entry>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US"/>
+          </Map>
+        </value>
+      </entry>
+      <entry key="templateApplication" value="DelimitedFile Template"/>
+    </Map>
+  </Attributes>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <Schemas>
+    <Schema displayAttribute="Group Association" identityAttribute="Group Association" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None">
+      <AttributeDefinition entitlement="true" managed="true" name="Group Association" schemaObjectType="GroupAssociationgroup" type="string">
+        <Description/>
+      </AttributeDefinition>
+    </Schema>
+    <Schema aggregationType="group" descriptionAttribute="" displayAttribute="" identityAttribute="" instanceAttribute="" nativeObjectType="GroupAssociationgroup" objectType="GroupAssociationgroup" permissionsRemediationModificationType="None">
+      <AttributeDefinition name="Group Association" type="string">
+        <Description/>
+      </AttributeDefinition>
+    </Schema>
+  </Schemas>
+  <ApplicationScorecard/>
+</Application>
